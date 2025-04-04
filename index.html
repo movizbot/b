@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Aliens And Whot</title>
+  <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+    <script>eruda.init();</script>
+</head>
+<style>
+a {
+  display: flex; 
+  flex-direction: row;  
+     align-items: center;
+    justify-content: center;
+  text-align: center;text-decoration: none;margin:35px;
+   background: transparent;color: grey; border: 1px solid grey;
+  padding: 30px 0px; border-radius : 45px; font-size: 45px;
+}
+btn {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 30px 0px;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+
+</style>
+
+
+<body style="background:black; display: block; flex-direction: column; align-items:center; justify-content: center;">
+   <ti style="background:black; display: flex; flex-direction: column; align-items:center; justify-content: center;">
+  
+  <div id="p1" style="display: block;"> 
+  <div  style=" color:grey; display:flex;align-items: center; height:270px;wjustify-content: start; border:0px;">
+         <div style="display:flex;align-items: center; justify-content: center; border: 10px solid grey; border-radius:50%;width:250px;height:250px;">
+
+          <div id="ic" style="color: #332e2e;font-size:150px; display:flex;align-items: center;justify-content: center;background-color: grey;  border-radius:50%;width:230px;height:230px;">M</div>
+            
+         </div>
+    <div id="nm" style="margin-left:10px; font-size: 30px">
+    
+  </div></div></div>
+    </ti>
+  
+  <div style="color: grey; text-align: center;font-size:35px">
+    <h1 >
+     Android app not installed
+  </h1>
+    Go to our Telegram channel and download the app under pinned messages.
+</div>
+    </br>
+  <!--<a id="a3" href="intent://mc2025.mc/#Intent;scheme=http;package=com.mcgames.mcapp;S.browser_fallback_url=https://movizbot.github.io/a/;end" style=" z-index:3; margin-top:6px; background: grey; border:1px solid #2e2e2e; border-radius:20px;color:#2e2e2e;padding:10px; "> Click to get free 50 mins</a>
+  -->
+  <a id="a1" href="javascript:op();">Go to channel</a>
+    </br> 
+    <h3>© AW Games 2025</h3>  
+    <script>
+    function open(){window.open("intent://aw.game#Intent;scheme=aw;package=com.awgames.aliensandwhot;end");}
+   window.onload= function ()
+  {
+    setTimeout(  op,70000 );  
+    
+  }
+  const Params = new URLSearchParams(window.location.search);
+    const Param = Params.get('action');
+    alert(Param);
+    function moviz(){a1.click();}
+  
+  function op(){   
+    /*let Params,Param;
+  try{  Params  = new URLSearchParams(window.location.search);
+    Param = urlParams.get('action');
+    alert(Param);
+  }catch(x){ }*/
+    window.location.href="intent://mc2025.mc/"+  Param +"#Intent;scheme=http;package=com.mcgames.mcapp;S.browser_fallback_url=https://movizbot.github.io/a/;end";
+  }
+     
+    </script>
+  </div>
+  </body>
+</html>
